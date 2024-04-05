@@ -1,11 +1,24 @@
 const mongoose = require('mongoose')
 
 const dataSchema = new mongoose.Schema({
-    name: {
+    firstname: {
         required: true,
         type: String
     },
-    age: {
+    lastname: {
+        required: true,
+        type: String
+    },
+    email: {
+        required: true,
+        type: String,
+        unique: true
+    },
+    phone: {
+        required: true,
+        type: String
+    },
+    birthday: {
         required: true,
         type: String
     }
